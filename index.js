@@ -1,8 +1,10 @@
-const express = require('express')
-const app = express ()
-const port = 3900
-app.use(express.json())
-const uuid = require('uuid')
+import cors from 'cors';
+const express = require('express');
+const app = express ();
+const port = 3900;
+app.use(express.json());
+app.use(cors());
+const uuid = require('uuid');
 
 
 const clients = []
